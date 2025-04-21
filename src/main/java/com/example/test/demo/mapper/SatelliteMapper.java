@@ -14,7 +14,7 @@ import com.example.test.demo.dto.response.SatelliteResponseDto;
 @Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
 public interface SatelliteMapper {
         @Mappings({
-                        @Mapping(source = "id", target = "id"),
+                        // @Mapping(source = "id", target = "id"),
                         @Mapping(source = "name", target = "name"),
                         @Mapping(source = "launch_date", target = "launch_date"),
                         @Mapping(source = "orbit_type", target = "orbit_type")
