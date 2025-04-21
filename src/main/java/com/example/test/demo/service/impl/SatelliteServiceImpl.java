@@ -30,6 +30,7 @@ public class SatelliteServiceImpl implements SatelliteService {
             Satellite existingSatellite = foundSatellite.get();
             Satellite mappedSatellite = satelliteMapper.satelliteRequestDtoToSatellite(satelliteRequestDto);
             mappedSatellite.setId(existingSatellite.getId());
+            System.out.println(satelliteRequestDto.name() + "name");
 
             Satellite updatedSatellite = satelliteRepository.save(mappedSatellite);
             return satelliteMapper.satelliteToSatelliteResponseDto(updatedSatellite);
